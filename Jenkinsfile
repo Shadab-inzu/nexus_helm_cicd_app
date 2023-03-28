@@ -52,6 +52,7 @@ pipeline{
                        docker login -u admin -p $nexus_cred 52.91.13.75:8083
                        docker push 52.91.13.75:8083/springapp:${VERSION}
                        docker rmi 52.91.13.75:8083/springapp:${VERSION}
+                       '''
                   }
 
                     }
