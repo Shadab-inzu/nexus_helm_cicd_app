@@ -5,7 +5,7 @@ pipeline{
         stage('sonar quality status'){
             agent {
 
-                docker{
+                docker {
                     image 'maven'
                 }
             }
